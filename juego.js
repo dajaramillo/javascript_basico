@@ -5,3 +5,6 @@ const input2 = document.querySelector('#input2');
 const btn = document.querySelector("#btn_jugar")
 
 
+function btn_jugar() {
+    
+}
