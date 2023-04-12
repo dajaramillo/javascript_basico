@@ -37,3 +37,29 @@ for(let i = 0 ; i < autos.length ; i++){
   console.log(autos[i]);
 }
 
+var productos = [
+    {nombre: "Peras", costo: 2000},
+    {nombre: "Manzanas", costo: 1500},
+    {nombre: "Naranjas", costo: 1000}
+];
+
+var filtro = productos.filter(function(articulo){
+    return articulo.costo <= 1500;
+});
+
+var filtroMap = productos.map(function(articulo){
+    return articulo.nombre;
+});
+
+var filtroFind = productos.find(function(producto){
+    return producto.nombre === "Manzanas"
+});
+
+productos.forEach(function(producto){
+    console.log(producto.nombre);
+});
+
+productos.some(function(producto){
+    return producto.costo <= 1500;
+});
+
